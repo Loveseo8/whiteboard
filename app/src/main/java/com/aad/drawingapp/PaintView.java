@@ -19,6 +19,9 @@ public class PaintView extends View {
     private Canvas mCanvas;
     private Bitmap mBitmap;
 
+    public int brushColor = Color.BLACK;
+    public int brushSize = 20;
+
     public PaintView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
 
@@ -132,7 +135,7 @@ public class PaintView extends View {
     private void touchStart(float x, float y){
 
         mPath = new Path();
-        MainActivity.FingerPath fingerPath = new MainActivity.FingerPath(Color.BLACK, 10, mPath);
+        MainActivity.FingerPath fingerPath = new MainActivity.FingerPath(brushColor, brushSize, mPath);
         paths.add(fingerPath);
 
         mPath.reset();

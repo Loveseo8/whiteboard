@@ -2,6 +2,7 @@ package com.aad.drawingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.graphics.Path;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -36,6 +37,38 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
+
+            final Button increase = findViewById(R.id.increase_brush_size);
+            increase.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    paintView.brushSize++;
+
+                }
+            });
+
+            final Button decrease = findViewById(R.id.decrease_brush_size);
+            decrease.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    if(paintView.brushSize > 1) paintView.brushSize--;
+
+                }
+            });
+
+            final Button eraser = findViewById(R.id.eraser);
+            eraser.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    if(paintView.brushColor == Color.BLACK) paintView.brushColor = Color.WHITE;
+                    else paintView.brushColor = Color.BLACK;
+
+                }
+            });
+
             isDrawInit = true;
 
         }

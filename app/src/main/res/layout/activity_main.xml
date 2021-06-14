@@ -34,6 +34,33 @@
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
+        <Button
+            android:text="+"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/white"
+            android:id="@+id/increase_brush_size"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="-"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/white"
+            android:id="@+id/decrease_brush_size"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="Eraser"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/white"
+            android:id="@+id/eraser"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
     </LinearLayout>
 
 
