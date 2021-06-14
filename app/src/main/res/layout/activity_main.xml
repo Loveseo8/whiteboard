@@ -35,19 +35,19 @@
             android:layout_weight="1"/>
 
         <Button
-            android:text="+"
+            android:text="@string/change_brush_size"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:textColor="@color/white"
-            android:id="@+id/increase_brush_size"
+            android:id="@+id/change_brush_size"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Button
-            android:text="-"
+            android:text="change brush color"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:textColor="@color/white"
-            android:id="@+id/decrease_brush_size"
+            android:id="@+id/change_brush_color"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
