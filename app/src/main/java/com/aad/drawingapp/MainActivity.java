@@ -133,8 +133,17 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
 
-                    if(!(paintView.brushColor == Color.WHITE)) paintView.brushColor = Color.WHITE;
-                    else paintView.brushColor = currentColor;
+                    if(!(paintView.brushColor == Color.WHITE)){
+
+                        paintView.brushColor = Color.WHITE;
+                        eraser.setTextColor(Color.RED);
+                    }
+                    else{
+
+                        paintView.brushColor = currentColor;
+                        eraser.setTextColor(Color.WHITE);
+
+                    }
 
                 }
             });
